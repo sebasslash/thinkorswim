@@ -1,5 +1,8 @@
-FROM rtfpessoa/ubuntu-jdk8
+FROM azul/zulu-openjdk:11
 WORKDIR /home/ubuntu
+
+RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+
 # Requirements
 RUN apt-get update && apt-get install -y \
 	wget \
