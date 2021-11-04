@@ -23,7 +23,7 @@ This script brings up a container, allowing you to login to the application.
 ./run.sh
 ```
 
-If you get an error related to DISPLAY, you may have to run:
+You'll have to run this, unless you've already added non network connections to XServer's ACL:
 
 ```bash
 xhost +local:$(id -un)
