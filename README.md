@@ -31,7 +31,7 @@ xhost +local:$(id -un)
 
 ### If needed, Post-Installation Steps
 
-I figured I could probably included a script in the image, but for now I'll highlight the steps here:
+I figured I could probably include a script in the image, but for now I'll highlight the steps here:
 
 It looks like during the image build, thinkorswim doesn't install properly (or I simply found the binary after re-running the installer). So, after running `./run.sh`, as a sanity check:
 
